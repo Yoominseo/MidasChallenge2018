@@ -6,8 +6,6 @@ class DStructure :
 public:
 	DStructure(int mode);
 	~DStructure();
-	WCHAR* m_fileDoor;
-	WCHAR* m_fileRefri;
 
 	void OnDraw(CDC *MemDC);
 };
