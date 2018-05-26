@@ -183,6 +183,8 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CShapeViewCtrl.h" />
+    <ClInclude Include="CShapeViewPane.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="DInterior.h" />
     <ClInclude Include="DShape.h" />
@@ -197,6 +199,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CShapeViewCtrl.cpp" />
+    <ClCompile Include="CShapeViewPane.cpp" />
     <ClCompile Include="DInterior.cpp" />
     <ClCompile Include="DShape.cpp" />
     <ClCompile Include="DSpace.cpp" />

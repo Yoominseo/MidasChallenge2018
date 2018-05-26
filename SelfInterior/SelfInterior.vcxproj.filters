@@ -51,6 +51,12 @@
     <ClInclude Include="define.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CShapeViewCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CShapeViewPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SelfInterior.cpp">
@@ -78,6 +84,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DStructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CShapeViewCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CShapeViewPane.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
