@@ -183,6 +183,11 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="define.h" />
+    <ClInclude Include="DInterior.h" />
+    <ClInclude Include="DShape.h" />
+    <ClInclude Include="DSpace.h" />
+    <ClInclude Include="DStructure.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SelfInterior.h" />
@@ -192,6 +197,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DInterior.cpp" />
+    <ClCompile Include="DShape.cpp" />
+    <ClCompile Include="DSpace.cpp" />
+    <ClCompile Include="DStructure.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="SelfInterior.cpp" />
     <ClCompile Include="SelfInteriorDoc.cpp" />
