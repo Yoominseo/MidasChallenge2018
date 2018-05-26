@@ -39,9 +39,6 @@
     <ClInclude Include="DShape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DSpace.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DInterior.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -55,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CShapeViewPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DWall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -77,9 +77,6 @@
     <ClCompile Include="DShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DSpace.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DInterior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -90,6 +87,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CShapeViewPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DWall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
