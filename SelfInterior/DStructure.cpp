@@ -7,10 +7,6 @@
 DStructure::DStructure(int mode)
 {
 	m_iShapeMode = mode;
-	CString door = _T("./res/img_door.bmp");
-	CString refri = _T("./res/img_window.bmp");
-	m_fileDoor = ConvertMultibyteToUnicode((LPSTR(LPCTSTR(door))));
-	m_fileRefri = ConvertMultibyteToUnicode((LPSTR(LPCTSTR(refri))));
 }
 
 DStructure::~DStructure()
