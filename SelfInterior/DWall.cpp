@@ -25,9 +25,11 @@ void DWall::OnDraw(CDC * MemDC)
 	Graphics graphics(*MemDC);
 
 	Gdiplus::Color clr;
+#if 0
 	if(m_bIsOpen == false)
 		clr.SetFromCOLORREF(RGB(255, 0, 0));
-	else 
+	else
+#endif
 		clr.SetFromCOLORREF(RGB(0, 0, 0));
 	Pen pen(Color(clr), 2);
 

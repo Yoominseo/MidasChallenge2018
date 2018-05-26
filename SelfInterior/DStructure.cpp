@@ -4,9 +4,11 @@
 #include "stdafx.h"
 
 
-DStructure::DStructure(int mode)
+DStructure::DStructure(int mode, CPoint point)
 {
 	m_iShapeMode = mode;
+	m_rect.X = point.x;
+	m_rect.Y = point.y;
 }
 
 DStructure::~DStructure()
@@ -17,8 +19,6 @@ void DStructure::OnDraw(CDC *MemDC)
 {
 	CDC cdc;
 	BITMAP bmpInfo;
-	m_rect.X = 100;
-	m_rect.Y = 100;
 
 	cdc.CreateCompatibleDC(MemDC);
 
@@ -42,7 +42,8 @@ void DStructure::OnDraw(CDC *MemDC)
 	pOldBmp = cdc.SelectObject(&bmp);
 
 	// 메모리 DC에 들어 있는 비트맵을 화면 DC로 복사하여 출력
-	MemDC->BitBlt(100, 100, 800, 85, &cdc, 0, 0, SRCCOPY);
+	MemDC->BitBlt(m_rect.X, m_rect.Y, m_rect.Width, m_rect.Height, &cdc, 0, 0, SRCCOPY);
+
 
 	cdc.SelectObject(pOldBmp);
 }
