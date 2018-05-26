@@ -25,10 +25,13 @@ void DWall::OnDraw(CDC * MemDC)
 	Graphics graphics(*MemDC);
 
 	Gdiplus::Color clr;
-	clr.SetFromCOLORREF(RGB(0, 0, 0));
+	if(m_bIsOpen == false)
+		clr.SetFromCOLORREF(RGB(255, 0, 0));
+	else 
+		clr.SetFromCOLORREF(RGB(0, 0, 0));
 	Pen pen(Color(clr), 2);
 
-	graphics.DrawLine(&pen, m_ptPrev, m_ptCur);
+	graphics.DrawRectangle(&pen, m_rect);
 }
 
 void DWall::setPoint(CPoint point)

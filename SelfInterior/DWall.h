@@ -14,5 +14,6 @@ public:
 	
 	Point m_ptPrev;
 	Point m_ptCur;
+	bool m_bIsOpen = false;
 };
 
