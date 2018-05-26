@@ -126,6 +126,18 @@
     <Image Include="res\icon_window.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="res\img_door.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\img_window.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_house.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon_room.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\SelfInterior.rc2">
