@@ -6,7 +6,7 @@ class DWall :
 	public DShape
 {
 public:
-	DWall();
+	DWall(int mode);
 	DWall(CPoint point);
 	~DWall();
 	void OnDraw(CDC *MemDC);

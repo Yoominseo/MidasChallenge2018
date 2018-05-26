@@ -3,9 +3,9 @@
 #include "define.h"
 
 
-DInterior::DInterior()
+DInterior::DInterior(int mode)
 {
-	m_iShapeMode = INTERIOR_MODE;
+	m_iShapeMode = mode;
 }
 
 
