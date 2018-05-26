@@ -1,21 +1,12 @@
 #pragma once
-enum DRAW_MODE
+
+enum SHAPE_MODE
 {
 	NONE = -1,		//옮기기
 	WALL_MODE,		//벽 생성
-	STRUCTURE_MODE,	//구조물(문, 창문 등) 생성
-	INTERIOR_MODE	//인테리어(TV, 냉장고 등) 생성
-};
-
-enum STRUCTURE
-{
-	DOOR_STRUCTURE,
-	WINODW_STRUCTURE
-};
-
-enum INTERIOR
-{
-	TV_INTERIOR,
-	REFRIGERATOR_INTERIOR
+	DOOR_MODE,		//문 생성
+	WINDOW_MODE,    //창문 생성 
+	TV_MODE,		//TV 생성
+	REFRI_MODE		//냉장고생성
 };
 

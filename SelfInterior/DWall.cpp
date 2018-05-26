@@ -3,9 +3,9 @@
 #include "define.h"
 
 
-DWall::DWall()
+DWall::DWall(int mode)
 {
-	m_iShapeMode = WALL_MODE;
+	m_iShapeMode = mode;
 }
 
 DWall::DWall(CPoint point)

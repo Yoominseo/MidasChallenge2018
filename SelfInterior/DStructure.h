@@ -4,8 +4,11 @@ class DStructure :
 	public DShape
 {
 public:
-	DStructure();
+	DStructure(int mode);
 	~DStructure();
+	WCHAR* m_fileDoor;
+	WCHAR* m_fileRefri;
+
 	void OnDraw(CDC *MemDC);
 };
 

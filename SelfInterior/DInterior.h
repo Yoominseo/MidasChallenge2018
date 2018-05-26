@@ -5,7 +5,7 @@ class DInterior :
 	public DShape
 {
 public:
-	DInterior();
+	DInterior(int mode);
 	~DInterior();
 
 	void OnDraw(CDC *MemDC);
