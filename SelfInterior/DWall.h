@@ -12,12 +12,7 @@ public:
 	void OnDraw(CDC *MemDC);
 	void setPoint(CPoint point);
 	
-	//프로그램상 POINT
 	Point m_ptPrev;
 	Point m_ptCur;
-
-	//실제 window POINT
-	POINT m_wptPrev; 
-	POINT m_wptCur;
 };
 
