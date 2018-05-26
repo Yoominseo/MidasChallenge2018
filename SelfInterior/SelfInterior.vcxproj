@@ -216,8 +216,6 @@
     <ResourceCompile Include="SelfInterior.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\bitmap1.bmp" />
-    <Image Include="res\bitmap2.bmp" />
     <Image Include="res\icon_door.bmp" />
     <Image Include="res\icon_refri.bmp" />
     <Image Include="res\icon_television.bmp" />
