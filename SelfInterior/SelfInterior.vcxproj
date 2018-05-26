@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CHelpDlg.h" />
     <ClInclude Include="CSettingDlg.h" />
     <ClInclude Include="CShapeViewCtrl.h" />
     <ClInclude Include="CShapeViewPane.h" />
@@ -200,6 +201,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CHelpDlg.cpp" />
     <ClCompile Include="CSettingDlg.cpp" />
     <ClCompile Include="CShapeViewCtrl.cpp" />
     <ClCompile Include="CShapeViewPane.cpp" />
