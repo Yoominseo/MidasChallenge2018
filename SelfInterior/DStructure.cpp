@@ -17,6 +17,8 @@ void DStructure::OnDraw(CDC *MemDC)
 {
 	CDC cdc;
 	BITMAP bmpInfo;
+	m_rect.X = 100;
+	m_rect.Y = 100;
 
 	cdc.CreateCompatibleDC(MemDC);
 
@@ -25,10 +27,14 @@ void DStructure::OnDraw(CDC *MemDC)
 	CBitmap* pOldBmp = NULL;
 	if (m_iShapeMode == DOOR_MODE)
 	{
+		m_rect.Width = 80;
+		m_rect.Height = 80;
 		bmp.LoadBitmapW(328);
 	}
 	else
 	{
+		m_rect.Height = 20;
+		m_rect.Width = 80;
 		bmp.LoadBitmapW(330);
 	}
 

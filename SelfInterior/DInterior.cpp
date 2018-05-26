@@ -15,6 +15,17 @@ DInterior::~DInterior()
 
 void DInterior::OnDraw(CDC *MemDC)
 {
+	m_rect.X = 100;
+	m_rect.Y = 100;
+	
+	Graphics graphics(*MemDC);
+
+	Gdiplus::Color clr;
+
+	Pen pen(Color(clr), 2);
+
+	graphics.DrawRectangle(&pen, m_rect);
+
 	CDC cdc;
 	BITMAP bmpInfo;
 
@@ -23,20 +34,42 @@ void DInterior::OnDraw(CDC *MemDC)
 	// 비트맵 리소스 로딩
 	CBitmap bmp;
 	CBitmap* pOldBmp = NULL;
+	
+
 	if (m_iShapeMode == TV_MODE)
 	{
+
+		m_rect.Height = 80;
+		m_rect.Width = 80;
 		bmp.LoadBitmapW(323);
+		CRect rect;
+		rect.top = m_rect.GetBottom() + 10;
+		rect.bottom = rect.top + 10;
+		rect.right = m_rect.GetRight();
+		rect.left = m_rect.GetLeft();
+		MemDC->DrawText(_T("TV"), rect, DT_SINGLELINE);
+
 	}
 	else
 	{
+		m_rect.Height = 80;
+		m_rect.Width = 80;
 		bmp.LoadBitmapW(325);
+		CRect rect;
+		rect.top = m_rect.GetBottom() + 10;
+		rect.bottom = rect.top + 10;
+		rect.right = m_rect.GetRight();
+		rect.left = m_rect.GetLeft();
+		MemDC->DrawText(_T("냉장고"), rect, DT_SINGLELINE);
+
 	}
 
 	// 메모리 DC에 선택
 	pOldBmp = cdc.SelectObject(&bmp);
 
 	// 메모리 DC에 들어 있는 비트맵을 화면 DC로 복사하여 출력
-	MemDC->BitBlt(100, 100, 800, 85, &cdc, 0, 0, SRCCOPY);
+	
+	MemDC->BitBlt(m_rect.X, m_rect.Y, m_rect.Width, m_rect.Height, &cdc, 0, 0, SRCCOPY);
 
 	cdc.SelectObject(pOldBmp);
 }
